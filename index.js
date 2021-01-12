@@ -22,8 +22,6 @@ let votingAge = 18
 
 votingAge >= 18 && console.log('true')
 
-
-
 /*
 Task 1b - Values
 
@@ -38,9 +36,11 @@ Do the following:
 let var1 = 1
 let var2 = 2
 
+console.log('first', var1)
 
+var1 = var2
 
-
+console.log('second', var1)
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -53,7 +53,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let str = '1999'
+let num = Number(str)
+console.log(num)
 
 
 /*
@@ -65,10 +67,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b
   }
 
+multiply(2, 3)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
