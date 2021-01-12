@@ -18,6 +18,10 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18
+
+votingAge >= 18 && console.log('true')
+
 
 
 /*
@@ -30,6 +34,9 @@ Do the following:
 
    HINT: no function required
 */
+
+let var1 = 1
+let var2 = 2
 
 
 
