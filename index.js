@@ -138,6 +138,31 @@ function hungryDog(weight, age) {
 	}
 }
 
+function hungryDogWithSwitch(weight, age) {
+	switch (true) {
+		case age >= 1:
+			switch (true) {
+				case weight <= 5:
+					return weight * 0.05;
+				case weight >= 6 && weight <= 10:
+					return weight * 0.04;
+				case weight >= 11 && weight <= 15:
+					return weight * 0.03;
+				case weight > 15:
+					return weight * 0.02;
+			}
+		case age < 1:
+			switch (true) {
+				case age >= 0.16 && age <= 0.4:
+					return weight * 0.1;
+				case age >= 0.41 && age <= 0.66:
+					return weight * 0.05;
+				case age >= 0.67 && age <= 1:
+					return weight * 0.04;
+			}
+	}
+}
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Rock, Paper, Scissors - Let's play against the computer!
@@ -186,8 +211,8 @@ Using the miles function below do the following:
 */
 
 function miles(km) {
-  /*add your code here*/
-  return km * 0.621371
+	/*add your code here*/
+	return km * 0.621371;
 }
 
 //Task 5b - Feet to CM
@@ -199,8 +224,8 @@ Using the feet function below do the following:
 */
 
 function feet(cm) {
-  /*add your code here*/
-  return cm / 30.48
+	/*add your code here*/
+	return cm / 30.48;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -214,7 +239,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startNum) {
-	return `${startNum} bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`
+	return `${startNum} bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${startNum -
+		1} bottles of soda on the wall`;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -233,33 +259,33 @@ Using the grade function below do the following:
 */
 
 function grade(score) {
-  /*Your Code here */
-  if (score >= 90 && score <= 100) {
-    return 'you got an A'
-  } else if (score >= 80 && score <= 89) {
-    return 'you got a B'
-  }else if (score >= 70 && score <= 79) {
-    return 'you got a C'
-  }else if (score >= 60 && score <= 69) {
-    return 'you got a D'
-  } else {
-    return 'you got an F'
-  }
+	/*Your Code here */
+	if (score >= 90 && score <= 100) {
+		return 'you got an A';
+	} else if (score >= 80 && score <= 89) {
+		return 'you got a B';
+	} else if (score >= 70 && score <= 79) {
+		return 'you got a C';
+	} else if (score >= 60 && score <= 69) {
+		return 'you got a D';
+	} else {
+		return 'you got an F';
+	}
 }
 
 function gradeWithSwitch(score) {
-  switch (true) {
-    case (score >= 90 && score <= 100):
-      return 'you got an A'
-    case (score >= 80 && score <= 89):
-      return 'you got a B'
-    case (score >= 70 && score <= 79):
-      return 'you got a C'
-    case (score >= 60 && score <= 69):
-      return 'you got a D'
-    default:
-      return 'you got an F'
-  }
+	switch (true) {
+		case score >= 90 && score <= 100:
+			return 'you got an A';
+		case score >= 80 && score <= 89:
+			return 'you got a B';
+		case score >= 70 && score <= 79:
+			return 'you got a C';
+		case score >= 60 && score <= 69:
+			return 'you got a D';
+		default:
+			return 'you got an F';
+	}
 }
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
