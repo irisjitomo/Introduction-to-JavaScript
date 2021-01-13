@@ -247,6 +247,21 @@ function grade(score) {
   }
 }
 
+function gradeWithSwitch(score) {
+  switch (true) {
+    case (score >= 90 && score <= 100):
+      return 'you got an A'
+    case (score >= 80 && score <= 89):
+      return 'you got a B'
+    case (score >= 70 && score <= 79):
+      return 'you got a C'
+    case (score >= 60 && score <= 69):
+      return 'you got a D'
+    default:
+      return 'you got an F'
+  }
+}
+
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
